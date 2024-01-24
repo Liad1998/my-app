@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+// src/App.js
+import React from 'react';
+import PetList from './petlist.js';  // Use forward slashes for the path
+import Petdetailes from './petdetailes.js';  // Use forward slashes for the path
+import AutoForm from './autoform.js';  // Use forward slashes for the path
+import AddPetForm from './addpetform.js';  // Use forward slashes for the path
+import DogImage from './dogimage.js'; // Adjust the path accordingly
+// Use forward slashes for the path
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Pet Adoption App</h1>
+      <PetList />
     </div>
   );
 }
